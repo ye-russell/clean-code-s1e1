@@ -18,9 +18,9 @@ body {
 }
 
 @media (max-width:768px) {
-.head-section {
-  text-align: center;
-}
+  .head-section {
+    text-align: center;
+  }
 }
 .main-section {
   display: block;
