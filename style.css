@@ -4,25 +4,25 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.heading-section {
+.head-section {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.heading-section img {
+.head-section img {
   width: 100%;
 }
-.heading-section .more-inf {
+.head-section .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.heading-section {
+.head-section {
   text-align: center;
 }
 }
-.todo-section {
+.main-section {
   display: block;
   width: 500px;
   margin: 0 auto 0;
