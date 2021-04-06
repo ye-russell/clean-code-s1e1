@@ -4,50 +4,50 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.head-section {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.head-section img {
+.header__img {
   width: 100%;
 }
-.more-inf {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .head-section {
+  .header {
     text-align: center;
   }
 }
-.main-section {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.add__form {
+  display: flex;
+}
+.add__form_input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
-  display: flex;
-}
-ul {
+.main__ul {
   margin: 0;
   padding: 0px;
 }
-li,
-h3 {
+.main__li,
+.main__title {
   list-style: none;
 }
-input,
-button {
+.main__input,
+.main__btn {
   outline: none;
 }
-button {
+.main__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -56,12 +56,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.main__btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.main__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -70,7 +69,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.main__input_text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -82,24 +81,24 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.main__input_text:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.add__title {
   display: block;
   margin: 0 0 20px;
 }
 #new-task {
   width: 318px;
 }
-p > button:hover {
+p > .main__btn:hover {
   color: #0fc57c;
 }
 
 /* Task list */
-li {
+.main__li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -108,23 +107,23 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.main__li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.main__li > .main__input_checkbox {
   margin: 0 10px;
 }
-li > label {
+.main__li > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+.main__li > .main__input_text {
   width: 226px;
 }
-li > .delete:hover {
+.main__li > .delete:hover {
   color: #cf2323;
 }
 .delete img {
@@ -143,11 +142,11 @@ li > .delete:hover {
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+ul li .main__input_text {
   display: none;
 }
 
-.edit-mode input[type="text"] {
+.edit-mode .main__input_text {
   display: inline-block;
   width: 224px;
 }
