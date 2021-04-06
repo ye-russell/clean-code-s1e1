@@ -31,6 +31,7 @@ body {
   display: flex;
 }
 .add__form_input {
+  width: 318px;
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -136,7 +137,7 @@ p > .main__btn:hover {
 }
 
 /* Completed */
-#completed-tasks label {
+.completed__ul label {
   text-decoration: line-through;
   color: #888;
 }
@@ -146,11 +147,11 @@ ul li .main__input_text {
   display: none;
 }
 
-.edit-mode .main__input_text {
+.editmode .main__input_text {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.editmode label {
   display: none;
 }
